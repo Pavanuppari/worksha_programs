@@ -1,0 +1,29 @@
+QUESTION:
+Given two numbers M and N. The task is to find the position of rightmost different bit in binary representation of numbers.
+Input:
+The input line contains T, denoting the number of testcases. Each testcase follows. First line of each testcase contains two space separated integers M and N.
+
+Output:
+For each testcase in new line, print the position of rightmost different bit in binary representation of numbers. If both M and N are same then print -1 in this case.
+
+PROGRAM:
+n=int(input())
+m=int(input())
+n=bin(n)
+m=bin(m)
+i=-1
+while n[i]==m[i]:
+    i+=-1
+print(-i)
+
+SAMPLE INPUT:
+11 
+9
+SAMPLE OUTPUT:
+2
+EXPLANATION:
+First input m and n values.Using the bin function find the binary values of m and n.
+m=bin(m)
+n=bin(n)
+using for loop ,find the position of rightmost different bit in binary numbers.To access the elements from right side ,we have to use negative indices.So we get i(position of rightmost different bit in binary numbers) in negative.So we print negative of i. –I gives the position of rightmost different bit in binary numbers 
+
